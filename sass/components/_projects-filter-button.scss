@@ -1,0 +1,19 @@
+.filter__filter-button {
+  padding: 6px 22px;
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  .hero-button.filter__filter-button--current {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+  }
+}
+.filter__filter-list-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

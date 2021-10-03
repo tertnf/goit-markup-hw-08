@@ -1,0 +1,75 @@
+/*----------HERO Section------------*/
+
+.hero-section {
+  /*outline: 1px solid red;*/
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-color: $third-background-color;
+}
+
+.hero-section__hero-title {
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $main-title-color;
+}
+.hero-button {
+  /*margin-bottom: 200px;*/
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $secondary-title-color;
+  background-color: $secondary-background-color;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function, box-shadow 250ms $timing-function;
+  &:focus,
+  &:hover {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
+  }
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-button {
+  color: $secondary-text-color;
+  background-color: $accent-color;
+  padding: 10px 32px;
+  text-align: center;
+  display: inline-block;
+  transition: color 250ms $timing-function;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}

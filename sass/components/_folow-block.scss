@@ -1,0 +1,33 @@
+.folow__folow-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.folow__folow-button-icon {
+  margin-left: 10px;
+}
+
+.folow__folow-input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: $third-background-color;
+
+  padding: 15px 0px 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+
+  margin-right: 12px;
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

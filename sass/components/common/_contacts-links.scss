@@ -1,0 +1,48 @@
+.site-contacts__contacts-link {
+  display: flex;
+  align-items: center;
+  color: $main-text-color;
+  font-weight: 500;
+  /*font-size: 14px;*/
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  transition: color 250ms $timing-function;
+}
+
+.site-contacts {
+  display: flex;
+  margin-left: auto;
+  padding-left: 0px;
+}
+
+.site-contacts__contacts-icon-tel {
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: fill 250ms $timing-function;
+  &:focus,
+  &:hover {
+    fill: #2196f3;
+  }
+}
+
+.site-contacts__contacts-icon-letter {
+  margin-right: 10px;
+  vertical-align: baseline;
+  transition: fill 250ms $timing-function;
+  &:focus,
+  &:hover {
+    fill: #2196f3;
+  }
+}
+
+.site-contacts__contacts-item {
+  &:focus,
+  &:hover {
+    fill: #2196f3;
+  }
+}
+
+.contact-information {
+  margin-right: 70px;
+}

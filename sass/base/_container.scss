@@ -1,0 +1,14 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  /*background-color: turquoise;*/
+  /*outline: 1px solid tomato;*/
+}
+.container--container-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
