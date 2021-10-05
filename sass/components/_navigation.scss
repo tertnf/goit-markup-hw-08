@@ -5,11 +5,14 @@
 }
 
 .site-nav__nav-list {
-  display: flex;
+  display: none;
   margin-bottom: 0px;
   margin-top: 0px;
   margin-left: 0px;
   padding-left: 0px;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .site-nav__nav-item {
@@ -49,14 +52,6 @@
     opacity: 1;
     width: 100%;
   }
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    fill: $accent-color;
-  }
-}
-
-.site-contacts__contacts-link {
   &:hover,
   &:focus {
     color: $accent-color;

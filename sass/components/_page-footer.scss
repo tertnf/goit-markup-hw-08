@@ -45,8 +45,19 @@
 }
 
 .page-footer__footer-content {
-  display: flex;
-  align-items: baseline;
+  display: block;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.page-footer__links {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .subscribe__subscribe-text,

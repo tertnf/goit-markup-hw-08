@@ -8,6 +8,11 @@
   letter-spacing: 0.02em;
   font-style: normal;
   transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .site-contacts {
