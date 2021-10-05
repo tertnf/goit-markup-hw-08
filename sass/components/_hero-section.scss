@@ -3,26 +3,48 @@
 .hero-section {
   /*outline: 1px solid red;*/
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   background-color: $third-background-color;
 }
 
+@media (mіn-width: 768px) {
+  .hero-section {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+}
+
 .hero-section__hero-title {
+  display: block;
   margin-bottom: 30px;
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: auto;
+  width: 360px; /*696px;*/
+
+  margin-left: 60px;
+  margin-right: 60px;
   text-align: center;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px; /*44px;*/
+  line-height: 1.62; /*1.36;*/
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $main-title-color;
 }
-.hero-button {
+@media screen and (min-width: 768px) {
+  .hero-section__hero-title {
+    margin-left: 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section__hero-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero-section__hero-button {
   /*margin-bottom: 200px;*/
   font-weight: 700;
   font-size: 16px;
@@ -45,19 +67,85 @@
 }
 
 .overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 480px; /*1600px;*/
+  height: 400px; /*600px;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero/hero-bg.jpg);
+    url(../images/adaptiv/mob/hero/mob-header-img.png);
+  /*url(../images/hero/hero-bg.jpg);*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .overlay {
+    max-width: 480px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/adaptiv/mob/hero/mob-header-img-2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/adaptiv/tab/hero/tab-header-img.png);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      max-width: 768px;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/adaptiv/tab/hero/tab-header-img-2x.png);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/adaptiv/desk/hero/desk-header-img.png);
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      max-width: 1600px;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/adaptiv/desk/hero/desk-header-img-2x.png);
+    }
+  }
 }
 
 .main-button {

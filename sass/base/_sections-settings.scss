@@ -1,10 +1,20 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 480px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .works-section {
   padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .works-section__works-title,

@@ -22,7 +22,7 @@
   transition: fill 250ms $timing-function;
   &:focus,
   &:hover {
-    fill: #2196f3;
+    fill: $accent-color;
   }
 }
 
@@ -32,14 +32,14 @@
   transition: fill 250ms $timing-function;
   &:focus,
   &:hover {
-    fill: #2196f3;
+    fill: $accent-color;
   }
 }
 
 .site-contacts__contacts-item {
   &:focus,
   &:hover {
-    fill: #2196f3;
+    fill: $accent-color;
   }
 }
 

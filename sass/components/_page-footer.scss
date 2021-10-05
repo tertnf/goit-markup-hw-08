@@ -21,14 +21,14 @@
     margin: 0;
   }
   .sosial-links__sosial-link {
-    fill: #ffffff;
+    fill: $main-background-color;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms $timing-function;
-    color: #ffffff;
+    color: $main-background-color;
     &:hover,
     &:focus {
-      fill: #ffffff;
-      background-color: #2196f3;
+      fill: $main-background-color;
+      background-color: $accent-color;
     }
   }
   .logo--logo-color {

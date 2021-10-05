@@ -24,7 +24,7 @@
   }
 }
 
-.folow__folow-input:-webkit-autofill,
+/*.folow__folow-input:-webkit-autofill,
 .folow__folow-input:-webkit-autofill:hover,
 .folow__folow-input:-webkit-autofill:focus,
 .folow__folow-input:-webkit-autofill:active,
@@ -37,7 +37,34 @@
 .modal__modal-comment:-webkit-autofill:focus,
 .modal__modal-comment:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
-  /*-webkit-box-shadow: 0 0 0px 1000px #fff inset;*/
+  /*-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}*/
+
+.folow__folow-input:-webkit-autofill {
+  &:hover,
+  &:focus,
+  &:active {
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: 0 0 0px 1000px #fff inset; /*----------на эту строку ругается компилятор*/
+  }
+}
+
+.modal__modal-input:-webkit-autofill {
+  &:hover,
+  &:focus,
+  &:active {
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: 0 0 0px 1000px #fff inset; /*----------на эту строку ругается компилятор*/
+  }
+}
+
+.modal__modal-comment:-webkit-autofill {
+  &:hover,
+  &:focus,
+  &:active {
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: 0 0 0px 1000px #fff inset; /*----------на эту строку ругается компилятор*/
+  }
 }
 
 .modal__modal-comment {
@@ -50,7 +77,6 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   &::placeholder {
-    /*font-size: 14px;*/
     line-height: calc(16 / 14);
     letter-spacing: 0.01em;
 

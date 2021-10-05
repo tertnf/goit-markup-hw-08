@@ -5,9 +5,10 @@
 
 .filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
-  .hero-button.filter__filter-button--current {
+  .hero-section__hero-button.filter__filter-button--current {
     color: $secondary-text-color;
     background-color: $accent-color;
   }

@@ -53,7 +53,7 @@
 
   letter-spacing: 0.01em;
 
-  color: #757575;
+  color: $main-text-color;
   margin-bottom: 4px;
 }
 
@@ -66,7 +66,7 @@
 
   position: relative;
 
-  color: #212121;
+  color: $secondary-title-color;
 
   margin-bottom: 12px;
 }
@@ -76,7 +76,7 @@
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  color: #ffffff;
+  color: $secondary-text-color;
   background-color: $accent-color;
   border: 1px solid $accent-color;
   cursor: pointer;
@@ -145,7 +145,7 @@
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: $main-text-color;
   /*outline: 1px solid rgb(187, 48, 48);*/
 }
 
@@ -156,7 +156,7 @@
   letter-spacing: 0.03em;
   text-decoration-line: underline;
 
-  color: #2196f3;
+  color: $accent-color;
 }
 
 .modal__modal-check-box {
@@ -170,7 +170,7 @@
   vertical-align: middle;
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid $secondary-title-color;
   border-radius: 2px;
   margin-right: 8px;
 }
