@@ -84,4 +84,25 @@
 }
 
 .mobile-menu__contacts-link--letter {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+
+  color: $main-text-color;
+}
+
+.mobile-menu__sosial-links-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  /* identical to box height, or 122% */
+
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
+
+.mobile-menu__sosial-links-list {
+  display: flex;
 }
