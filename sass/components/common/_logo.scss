@@ -1,6 +1,9 @@
 .page-header {
   .logo {
-    margin-right: 93px;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+      margin-right: 93px;
+    }
   }
 }
 

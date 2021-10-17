@@ -9,7 +9,7 @@
 }
 
 .folow__folow-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -18,7 +18,11 @@
   padding: 15px 0px 15px 16px;
   color: rgba(255, 255, 255, 0.6);
 
-  margin-right: 12px;
+  margin: 0px 15px 20px 15px;
+  @media screen and(min-width: 768px) {
+    margin-right: 12px;
+    width: 358px;
+  }
   &::placeholder {
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -29,5 +33,10 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+.folow {
+  @media screen and(max-width: 767px) {
+    text-align: center;
   }
 }
