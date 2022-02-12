@@ -2,25 +2,25 @@
 
 .hero-section {
   /*outline: 1px solid red;*/
-  text-align: center;
-  padding-bottom: 118px;
-  padding-top: 118px;
-  background-color: $third-background-color;
+  // text-align: center;
+  // padding-bottom: 118px;
+  // padding-top: 118px;
+  // background-color: $third-background-color;
 }
 
 @media (mіn-width: 768px) {
   .hero-section {
-    padding-bottom: 200px;
-    padding-top: 200px;
+    // padding-bottom: 200px;
+    // padding-top: 200px;
   }
 }
 
 .hero-section__hero-title {
   display: block;
   margin-bottom: 30px;
-  min-width: auto;
-  width: 360px; /*696px;*/
-
+  // min-width: auto;
+  // width: 360px; /*696px;*/
+  padding-top: 118px;
   margin-left: 60px;
   margin-right: 60px;
   text-align: center;
@@ -34,22 +34,31 @@
 }
 @media screen and (min-width: 768px) {
   .hero-section__hero-title {
-    margin-left: 204px;
+    // margin-left: 204px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-section__hero-title {
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    padding-top: 200px;
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 
 .hero-section__hero-button {
-  /*margin-bottom: 200px;*/
+  //   /*margin-bottom: 200px;*/
+  display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+
   letter-spacing: 0.03em;
   color: $secondary-title-color;
   background-color: $secondary-background-color;
@@ -151,9 +160,9 @@
 .main-button {
   color: $secondary-text-color;
   background-color: $accent-color;
-  padding: 10px 32px;
-  text-align: center;
-  display: inline-block;
+  // padding: 10px 32px;
+  // // text-align: center;
+  // display: inline-block;
   transition: color 250ms $timing-function;
   cursor: pointer;
   &:hover,
