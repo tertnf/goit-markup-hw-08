@@ -1,24 +1,24 @@
 .sosial-links {
-  // display: flex;
-  // justify-content: center;
-  /*margin-bottom: 30px;*/
-  /*margin-left: 32px;
-  margin-right: 32px;*/
-  // padding: 0;
+  display: flex;
+  justify-content: center;
+  // margin-bottom: 30px;
+  // margin-left: 32px;
+  // margin-right: 32px;
+  padding: 0;
 }
 .sosial-links__sosial-icon {
   fill: currentColor;
 }
 
 .sosial-links__sosial-link {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: $fourth-background-color;
 
-  // width: 44px;
-  // height: 44px;
-  /*padding: 0;*/
+  width: 44px;
+  height: 44px;
+  padding: 0;
   border: none;
 
   border-radius: 50%;
@@ -34,6 +34,6 @@
 
 .sosial-links__sosial-item {
   &:not(:last-child) {
-    // margin-right: 10px;
+    margin-right: 10px;
   }
 }
