@@ -1,7 +1,7 @@
 .folow__folow-button {
-  // display: inline-flex;
-  // align-items: center;
-  // justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .folow__folow-button-icon {
@@ -28,9 +28,9 @@
     line-height: calc(20 / 16);
     /* identical to box height, or 125% */
 
-    // display: flex;
-    // align-items: center;
-    // letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
   }

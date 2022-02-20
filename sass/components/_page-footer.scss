@@ -4,9 +4,16 @@
   background-color: $third-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
   .adr__adr-text {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 9px;
+    }
   }
   .site-contacts {
     display: inline-block;
@@ -39,7 +46,10 @@
   }
   .site-contacts__contacts-item {
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 9px;
+      }
     }
   }
 }
@@ -70,4 +80,10 @@
   text-transform: uppercase;
   color: $secondary-text-color;
   margin-bottom: 20px;
+}
+
+.contact-information {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
