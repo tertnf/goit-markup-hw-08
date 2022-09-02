@@ -18,13 +18,14 @@
 
   <body>
     <header class="page-header">
-      <div class="container">
-        <div class="container--container-feature">
+      <div class="container page-header--align">
+        <!-- <div class="container--container-feature"> -->
+          <div class="page-header__navigation">
         <nav class="site-nav">
           <a href="./index.html" lang="en" class="logo link"
             >Web<span class="logo--logo-color">Studio</span></a
           >
-          <ul class="list site-nav__nav-list">
+          <ul class="list site-nav__nav-list list  ">
             <li class="site-nav__nav-item">
               <a href="./index.html" class="site-nav__nav-link link">Студия</a>
             </li>
@@ -37,7 +38,8 @@
               <a href="" class="site-nav__nav-link link">Контакты</a>
             </li>
           </ul>
-        </nav>
+        </nav> 
+        </div>
         <ul class="site-contacts list">
           <li class="site-contacts__contacts-item">
             <a href="mailto:info@devstudio.com" class="site-contacts__contacts-link link"> <svg class="site-contacts__contacts-icon-letter " width="16"
@@ -51,7 +53,60 @@
               </svg>+38 096 111 11 11</a>
           </li>
         </ul>
+        <button type="button" class="menu-open js-open-menu" aria-controls="mobile-menu" data-menu-button>
+                    <svg width="40" height="40">
+                        <use class="menu-button__icon-menu" href="./images/svg/sprite.svg#icon-menu_40px"></use>
+                
+                    </svg>
+                </button>
       </div>
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div><button class="menu-close js-close-menu">
+            <svg width="40" height="40">
+              <use class="menu-button__icon-cross" href="./images/svg/sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul class="mobile-menu list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link link current">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="/portfolio.html" class="mobile-menu__link link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__block">
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__contacts-item">
+              <a href="tel:+380961111111" class="mobile-menu__contacts-link mobile-menu__contacts-link--tel link"> +38
+                096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link mobile-menu__contacts-link--letter link">
+                info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__sosial-links-list list">
+            <li class="mobile-menu__sosial-links-item">
+              <a href="" class="mobile-menu__sosial-links-link link">Instagramm</a>
+            </li>
+            <li class="mobile-menu__sosial-links-item">
+              <a href="" class="mobile-menu__sosial-links-link link">Twitter</a>
+            </li>
+            <li class="mobile-menu__sosial-links-item">
+              <a href="" class="mobile-menu__sosial-links-link link">Facebook</a>
+            </li>
+            <li class="mobile-menu__sosial-links-item">
+              <a href="" class="mobile-menu__sosial-links-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -75,8 +130,8 @@
               <button type="button" class="hero-section__hero-button filter__filter-button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list projects-list">
-            <li class="projects-list__projects-item">
+          <ul class="list projects-list list">
+            <li class="projects-list__projects-item list">
                 <a href="" class="projects-list__projects-item-link link">
                     <div class="projects-list__projects-overlay">
                         <img 
@@ -94,7 +149,7 @@
                     </div>
                   </a>
             </li>
-            <li class="projects-list__projects-item">
+            <li class="projects-list__projects-item list">
                 <a href="" class="projects-list__projects-item-link link">
                     <div class="projects-list__projects-overlay">
                       <img
@@ -111,7 +166,7 @@
                     </div>
                 </a>
             </li>
-            <li class="projects-list__projects-item">
+            <li class="projects-list__projects-item list">
                 <a href="" class="projects-list__projects-item-link link">
                     <div class="projects-list__projects-overlay">
                       <img
@@ -130,7 +185,7 @@
                     </div>
                   </a>
             </li>
-            <li class="projects-list__projects-item">
+            <li class="projects-list__projects-item list">
                 <a href="" class="projects-list__projects-item-link link">
                     <div class="projects-list__projects-overlay">
                       <img
@@ -149,7 +204,7 @@
                     </div>
                   </a>
             </li>
-            <li class="projects-list__projects-item">
+            <li class="projects-list__projects-item list">
                 <a href="" class="projects-list__projects-item-link link">
                     <div class="projects-list__projects-overlay">
                       <img
@@ -168,7 +223,7 @@
                     </div>    
                   </a>
             </li>
-            <li class="projects-list__projects-item">
+            <li class="projects-list__projects-item list">
                 <a href="" class="projects-list__projects-item-link link">
                     <div class="projects-list__projects-overlay">
                       <img
@@ -187,7 +242,7 @@
                     </div>
                   </a>
             </li>
-            <li class="projects-list__projects-item">
+            <li class="projects-list__projects-item list">
                 <a href="" class="projects-list__projects-item-link link">
                     <div class="projects-list__projects-overlay">
                       <img
@@ -206,7 +261,7 @@
                     </div>
                   </a>
             </li>
-            <li class="projects-list__projects-item">
+            <li class="projects-list__projects-item list">
                 <a href="" class="projects-list__projects-item-link link">
                     <div class="projects-list__projects-overlay">
                       <img
@@ -225,7 +280,7 @@
                     </div>
                   </a>
             </li>
-            <li class="projects-list__projects-item">
+            <li class="projects-list__projects-item list">
                 <a href="" class="projects-list__projects-item-link link">
                     <div class="projects-list__projects-overlay">
                       <img
@@ -294,13 +349,20 @@
           </div>
           <div class="folow">
             <p class="folow__folow-text">Подпишитесь на рассылку</p>
-            <input class="folow__folow-input" type="email" placeholder="E-mail" name="mail" id="email">
-            <button class="folow__folow-button" type="submit">Подписаться <svg class="folow__folow-button-icon" width="24" height="24">
+            <div class="folow__content">
+              <input class="folow__folow-input" type="email" placeholder="E-mail" name="mail" id="email">
+              <button class="folow__folow-button" type="submit">Подписаться <svg class="folow__folow-button-icon" width="24" height="24">
                 <use href="./images/svg/sprite.svg#icon-icon-send"></use>
               </svg></button>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

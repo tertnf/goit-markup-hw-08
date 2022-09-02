@@ -1,85 +1,75 @@
-// /*----Модальное окно-----*/
+/*----Модальное окно-----*/
 
-// .modal {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-//   display: inline-block;
+  display: inline-block;
 
-//   text-align: left;
-//   padding: 40px;
+  text-align: left;
+  padding: 40px;
 
 //   min-width: 528px;
 //   min-height: 581px;
-//   border-radius: 4px;
+  border-radius: 4px;
 
-//   background-color: $main-background-color;
-//   transform: translate(-50%, -50%) scale(1);
-//   transition: transform 250ms $timing-function;
+  background-color: $main-background-color;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms $timing-function;
 
-//   .backdrop.is-hidden & {
-//     transform: translate(-50%, -50%) scale(0.9);
-//   }
-// }
 
-// /*.folow__folow-input:-webkit-autofill,
-// .folow__folow-input:-webkit-autofill:hover,
-// .folow__folow-input:-webkit-autofill:focus,
-// .folow__folow-input:-webkit-autofill:active,
-// .modal__modal-input:-webkit-autofill,
-// .modal__modal-input:-webkit-autofill:hover,
-// .modal__modal-input:-webkit-autofill:focus,
-// .modal__modal-input:-webkit-autofill:active,
-// .modal__modal-comment:-webkit-autofill,
-// .modal__modal-comment:-webkit-autofill:hover,
-// .modal__modal-comment:-webkit-autofill:focus,
-// .modal__modal-comment:-webkit-autofill:active {
-//   transition: background-color 5000s ease-in-out 0s;
-//   /*-webkit-box-shadow: 0 0 0px 1000px #fff inset;
-// }*/
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  @media screan and (max-width: 767px) {
+    width: 450px;
+    height: 609px;
+  }
+}
 
-// .folow__folow-input:-webkit-autofill {
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     transition: background-color 5000s ease-in-out 0s;
-//     box-shadow: 0 0 0px 1000px #fff inset; /*----------на эту строку ругается компилятор*/
-//   }
-// }
+/*.folow__folow-input:-webkit-autofill,
+.folow__folow-input:-webkit-autofill:hover,
+.folow__folow-input:-webkit-autofill:focus,
+.folow__folow-input:-webkit-autofill:active,
+.modal__modal-input:-webkit-autofill,
+.modal__modal-input:-webkit-autofill:hover,
+.modal__modal-input:-webkit-autofill:focus,
+.modal__modal-input:-webkit-autofill:active,
+.modal__modal-comment:-webkit-autofill,
+.modal__modal-comment:-webkit-autofill:hover,
+.modal__modal-comment:-webkit-autofill:focus,
+.modal__modal-comment:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  /*-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}*/
 
-// .modal__modal-input:-webkit-autofill {
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     transition: background-color 5000s ease-in-out 0s;
-//     box-shadow: 0 0 0px 1000px #fff inset; /*----------на эту строку ругается компилятор*/
-//   }
-// }
+.folow__folow-input:-webkit-autofill {
+  &:hover,
+  &:focus,
+  &:active {
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: 0 0 0px 1000px #fff inset; /*----------на эту строку ругается компилятор*/
+  }
+}
 
-// .modal__modal-comment:-webkit-autofill {
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     transition: background-color 5000s ease-in-out 0s;
-//     box-shadow: 0 0 0px 1000px #fff inset; /*----------на эту строку ругается компилятор*/
-//   }
-// }
+.modal__modal-input:-webkit-autofill {
+  &:hover,
+  &:focus,
+  &:active {
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: 0 0 0px 1000px #fff inset; /*----------на эту строку ругается компилятор*/
+  }
+}
 
-// .modal__modal-comment {
-//   padding: 12px 16px;
+.modal__modal-comment:-webkit-autofill {
+  &:hover,
+  &:focus,
+  &:active {
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: 0 0 0px 1000px #fff inset; /*----------на эту строку ругается компилятор*/
+  }
+}
 
-//   resize: none;
-//   width: 448px;
-//   height: 138px;
 
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   border-radius: 4px;
-//   &::placeholder {
-//     line-height: calc(16 / 14);
-//     letter-spacing: 0.01em;
-
-//     color: rgba(117, 117, 117, 0.5);
-//   }
-// }

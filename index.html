@@ -21,7 +21,7 @@
                 <div class="page-header__navigation">
                     <nav class="site-nav">
                         <a href="./index.html" lang="en" class="logo link">Web<span class="logo--logo-color">Studio</span></a>
-                        <!-- <ul class="list site-nav__nav-list">
+                        <ul class="list site-nav__nav-list">
                             <li class="site-nav__nav-item">
                                 <a href="./index.html" class="site-nav__nav-link link current">Студия</a>
                             </li>
@@ -31,11 +31,11 @@
                             <li class="site-nav__nav-item">
                                 <a href="" class="site-nav__nav-link link">Контакты</a>
                             </li>
-                        </ul> -->
+                        </ul>
                     </nav>
                     
                 </div>
-                <!-- <ul class="site-contacts list">
+                <ul class="site-contacts list">
                     <li class="site-contacts__contacts-item">
                         <a href="mailto:info@devstudio.com" class="site-contacts__contacts-link link"> <svg
                                 class="site-contacts__contacts-icon-letter " width="14" height="10">
@@ -48,7 +48,7 @@
                                 <use href=./images/svg/sprite.svg#icon-smartphone></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
-                </ul> -->
+                </ul>
                 <button type="button" class="menu-open js-open-menu" aria-controls="mobile-menu" data-menu-button>
                     <svg width="40" height="40">
                         <use class="menu-button__icon-menu" href="./images/svg/sprite.svg#icon-menu_40px"></use>
@@ -137,7 +137,7 @@
                 </ul>
                 </div>
         </section>
-       <!-- <section class="works-section">
+       <section class="works-section">
             <div class="container">
             <h2 class="works-section__works-title">Чем мы занимаемся</h2>
             <ul class="list works-list">
@@ -161,7 +161,7 @@
                 </li>
             </ul>
         </div>
-        </section>-->
+        </section>
         
         <section class="team-section section">
             <div class="container">
@@ -370,13 +370,15 @@
                 </div>
                 <div class="folow">
                     <p class="folow__folow-text">Подпишитесь на рассылку</p>
-                    <input class="folow__folow-input" type="email" placeholder="E-mail" name="mail" id="email" >
-                    <button class="folow__folow-button" type="submit">Подписаться <svg class="folow__folow-button-icon" width="24" height="24"><use href="./images/svg/sprite.svg#icon-icon-send"></use></svg></button>                    
+                    <div class="folow__content ">
+                        <input class="folow__folow-input" type="email" placeholder="E-mail" name="mail" id="email" >
+                        <button class="folow__folow-button" type="submit">Подписаться <svg class="folow__folow-button-icon" width="24" height="24"><use href="./images/svg/sprite.svg#icon-icon-send"></use></svg></button>                    
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             
             <button type="button" class="modal__button-modal-close" data-modal-close><svg class="modal__modal-close-icon" width="30"
@@ -414,12 +416,12 @@
                 <label class="p-policy" for="p-policy">
                     <input class="p-policy__modal-check-box-input" type="checkbox" name="p-policy" id="p-policy">
                     <span class="p-policy__modal-p-policy-icon"></span>
-                    Соглашаюсь с рассылкой и принимаю <a class="p-policy__modal-link" href="">Условия договора</a>
+                     <a class="p-policy__modal-link" href="">Условия договора</a>
                 </label>
             </div>
             <button class="modal__modal-button " type="submit">Отправить</button>
             
-        </div> -->
+        </div>
     </div>
     <script src = "./js/modal.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

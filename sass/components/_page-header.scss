@@ -56,4 +56,8 @@
   align-items: center;
   margin: auto;
   justify-content: space-between;
+  
+  @media screen and (min-width: 768px){
+    margin: 21px auto;
+  }
 }
